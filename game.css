@@ -1,0 +1,195 @@
+@import url('https://fonts.cdnfonts.com/css/pirates');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+
+body{
+ overflow: hidden;   
+}
+.main{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.game{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#ffd036,20%, #d57e12);
+    position: relative;
+    
+}
+.game header .logo a{
+    color: white;
+    display: block;
+   
+    
+}
+.game header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 30px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-left: 60px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 2px solid transparent;
+    transition: .4s;
+}
+
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom:2px solid white;
+}
+nav ul li.active a{
+    border-bottom: 2px solid white;
+}
+nav ul li.btn a{
+    background: transparent;
+    color: white;
+    border-radius: 30px;
+    padding: 9px 20px;
+    border: 1px solid #f5dca8;
+    font-weight: 500;
+    margin-left: 150px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+nav ul li.btn:hover a{
+    color: black;
+    background: white;
+    border: 1px solid white;
+    transition: .4s;
+}
+
+.content{
+    padding-top: 140px;
+}
+.content .text{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+.content .text h6{
+    font-size: 24px;
+    font-family: 400;
+    color: #ffffff;
+    margin-bottom: 40px;
+   
+}
+.content .text h3{
+    color: white;
+}
+.content .text h1{
+    font-size: 100px;
+    line-height: 1;
+    color: white;
+    margin: 0px 0px 45px;
+    font-family: 'PiratesBlackbeard', sans-serif;
+}
+.content .text p{
+    font-family: 'PiratesBonney', sans-serif;
+    width: 480px;
+    color: white;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.content .text a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: white;
+    border: 1px solid white;
+    padding: 9px 25px; 
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content .text a:hover{
+   
+    transform: scale(1.2);
+    border: 1px solid #d57e12;
+    color: white;
+    background: transparent;
+    transition: .4s;
+}
+.content .text a.cta{
+    border: 1px solid #f5dca8;
+    color: white;
+    background: transparent;
+    margin-left: 20px;
+}
+
+
+.content .text a.cta i{
+    margin-right: 10px;
+}
+.content .text a.cta:hover{
+    color: black;
+    background: white;
+    border: 1px solid white;
+    transition: .4s;
+}
+.content .social{
+    position: relative;
+    z-index: 2;
+    margin-top:200px ;
+    padding-bottom: 40px;
+
+}
+.content .social a{
+    color: white;
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 25px;
+
+}
+.content .social a:hover{
+    transform: scale(1.4);
+    transition: .4s;
+    color: #ffffff;
+}
+.img{
+    position: absolute;
+    width: 100%;
+    height: 77%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin-right: 10%;
+}
+.img img{
+    height: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    img {
+      width: 50%;
+      max-height: 50%;
+    }
+   
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .game{
+        width: 100%;
+    }
+  }
